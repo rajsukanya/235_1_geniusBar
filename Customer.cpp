@@ -6,7 +6,7 @@ Customer::Customer()
 {
 }
 
-Customer::Customer(string name, string device = "unknown", int wait_time = 0)
+Customer::Customer(string name, string device, int wait_time)
 {
 }
 
@@ -18,10 +18,12 @@ string Customer::getName()
 string Customer::getDevice()
 {
   cout << "getDevice" <<endl;
+  cout << "Finished" <<endl;
 }
 
 int Customer::getWaitTime()
 {
+  cout << "inside getWaitTime" <<endl;
   cout << "getWaitTime" <<endl;
 }
 
