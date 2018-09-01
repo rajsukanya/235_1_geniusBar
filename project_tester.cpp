@@ -1,16 +1,18 @@
 #include <iostream>
-#include "Customer.h"
-#include "GeniusBar.h"
+#include "Customer.hpp"
+#include "GeniusBar.hpp"
 using namespace std;
 
 int main() 
 {
   //initialize a GeniusBar
   GeniusBar genius_bar;
-  
+ 
   //create some customers
   Customer customer1("Lina", "iPhone");
+  
   cout << customer1.getName() << " has problems with " << customer1.getDevice() << endl;
+  
   Customer customer2("Clay", "iPad");
   cout << customer2.getName() << " has problems with " << customer2.getDevice() << endl;
   Customer customer3("Rory", "iMac");
@@ -22,7 +24,7 @@ int main()
   Customer customer6("Sky", "macBookAir");
   cout << customer6.getName() << " has problems with " << customer6.getDevice() << endl;
 
-  cout << endl << "add customers to the geinus bar \n";
+  cout << endl << "add customers to the genius bar \n";
   cout << genius_bar.addWaitingCustomer(customer1) << endl;  // true (1)
   cout << customer1.getName() << "'s wait time is now " << customer1.getWaitTime() << endl;
   cout << genius_bar.addWaitingCustomer(customer2) << endl;  // true (1)
