@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Customer.h"
+#include "Customer.hpp"
 using namespace std;
 
 Customer::Customer()

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "GeniusBar.h"
+#include "GeniusBar.hpp"
 using namespace std;
 
 GeniusBar::GeniusBar()
