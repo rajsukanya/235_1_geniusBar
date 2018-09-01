@@ -4,30 +4,34 @@ using namespace std;
 
 Customer::Customer()
 {
+  name_ = "unknown";
+  defective_device_ = "unknown";
+  wait_time_ = -1;
 }
 
 Customer::Customer(string name, string device, int wait_time)
 {
+  name_ = name;
+  defective_device_ = device;
+  wait_time_ = wait_time;
 }
 
 string Customer::getName()
 {
-  cout << "getName" <<endl;
+  return name_;
 }
 
 string Customer::getDevice()
 {
-  cout << "getDevice" <<endl;
-  cout << "Finished" <<endl;
+  return defective_device_;
 }
 
 int Customer::getWaitTime()
 {
-  cout << "inside getWaitTime" <<endl;
-  cout << "getWaitTime" <<endl;
+  return wait_time_;
 }
 
 void Customer::updateWaitTime(int new_wait_time)
 {
-  cout << "updateWaitTime" <<endl;
+  wait_time_ = new_wait_time;
 }
