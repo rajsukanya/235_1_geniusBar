@@ -13,9 +13,9 @@ class Customer
     int getWaitTime();
     void updateWaitTime(int new_wait_time);
   private:
-    string name;
-    string defective_device;
-    int wait_time;
+    string name_;
+    string defective_device_;
+    int wait_time_;
 };
 
 #endif
