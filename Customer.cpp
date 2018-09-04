@@ -1,15 +1,23 @@
+/*
+Name: Sukanya Raj
+File name: Customer.cpp
+Date: 9/6/18
+Assignment: Project 1
+Description: implementation of class Customer
+*/
+
 #include <iostream>
 #include "Customer.hpp"
 using namespace std;
 
-Customer::Customer()
+Customer::Customer() //default constructor
 {
   name_ = "unknown";
   defective_device_ = "unknown";
-  wait_time_ = -1;
+  wait_time_ = 0;
 }
 
-Customer::Customer(string name, string device, int wait_time)
+Customer::Customer(string name, string device, int wait_time) //parameterized constructor
 {
   name_ = name;
   defective_device_ = device;
